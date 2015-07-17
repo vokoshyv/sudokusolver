@@ -1,119 +1,217 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>sudoku solver</title>
-    <script src="sudoku.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  </head>
-  <body>
-    
-    <div class="topPortion">
-      <div class="text-center">
-        <h1>SUDOKU SOLVER</h1>
+  <html>
+    <head>
+      <meta charset="UTF-8" />
+      <title>sudoku solver</title>
+      <script src="sudoku.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    </head>
+    <body>
+      
+      <div class="topPortion">
+        <div class="text-center">
+          <h1>SUDOKU SOLVER</h1>
+        </div>
+        <div class="text-center">
+          <h3>Please input your data below!!</h3>
+        </div>
       </div>
-      <div class="text-center">
-        <h3>Please input your data below!!</h3>
+      
+      <br>
+
+      <div class="sudokuInputArea text-center">
+        <form action="">
+
+          <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-2">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue1">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue2">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue3">
+            </div>
+            <div class="col-md-2">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue4">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue5">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue6">
+            </div>
+            <div class="col-md-2">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue7">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue8">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue9">
+            </div>
+            <div class="col-md-3"></div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-2">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue10">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue11">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue12">
+            </div>
+            <div class="col-md-2">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue13">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue14">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue15">
+            </div>
+            <div class="col-md-2">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue16">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue17">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue18">
+            </div>
+            <div class="col-md-3"></div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-2">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue19">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue20">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue21">
+            </div>
+            <div class="col-md-2">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue">
+            </div>
+            <div class="col-md-2">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue">
+            </div>
+            <div class="col-md-3"></div>
+          </div>
+          
+          <br>
+
+          <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-2">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue">
+            </div>
+            <div class="col-md-2">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue">
+            </div>
+            <div class="col-md-2">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue">
+            </div>
+            <div class="col-md-3"></div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-2">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue">
+            </div>
+            <div class="col-md-2">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue">
+            </div>
+            <div class="col-md-2">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue">
+            </div>
+            <div class="col-md-3"></div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-2">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue">
+            </div>
+            <div class="col-md-2">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue">
+            </div>
+            <div class="col-md-2">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue">
+            </div>
+            <div class="col-md-3"></div>
+          </div>
+
+          <br>
+
+          <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-2">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue">
+            </div>
+            <div class="col-md-2">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue">
+            </div>
+            <div class="col-md-2">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue">
+            </div>
+            <div class="col-md-3"></div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-2">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue">
+            </div>
+            <div class="col-md-2">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue">
+            </div>
+            <div class="col-md-2">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue">
+            </div>
+            <div class="col-md-3"></div>
+          </div>  
+
+          <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-2">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue">
+            </div>
+            <div class="col-md-2">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue">
+            </div>
+            <div class="col-md-2">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue">
+              <input type="number" name="quantity" min="1" max="9" value="0" id="numberValue">
+            </div>
+            <div class="col-md-3"></div>
+          </div>
+
+          <br>
+
+          <input type="submit">
+        </form>
       </div>
-    </div>
-    
-    <br>
 
-    <div class="sudokuInputArea text-center">
-      <form action="">
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <br>
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <br>
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <br>
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <br>
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <br>
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <br>
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <br>
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <br>
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <input type="number" name="quantity" min="1" max="9" value="0">
-        <br>
-      </form>
-    </div>
-
-  </body>
-</html>
+    </body>
+  </html>
