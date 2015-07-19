@@ -69,7 +69,12 @@ var isNotSolved = function(puzzle){
 
 function sudoku(puzzle) {
   var work;
+  var countCheck = 1;
+
   while (isNotSolved(puzzle)){
+    if (countCheck > 81){
+      break;
+    }
     for (var colIndex = 0; colIndex < puzzle.length; colIndex++){
       for (var rowIndex = 0; rowIndex < puzzle[colIndex].length; rowIndex++){
         if (puzzle[colIndex][rowIndex] === 0){
@@ -80,6 +85,7 @@ function sudoku(puzzle) {
         }
       }
     }
+    countCheck++;
   }
   return puzzle;
 }
