@@ -23,12 +23,65 @@ var solveThePuzzle = function(){
   var result = sudoku(work);
 
   var solutionTable = document.createElement("TABLE");
+  solutionTable.setAttribute("border", "1px black");
+  solutionTable.style.width = "200px";
+  solutionTable.className = "tableItself";
 
+  var containingDiv = document.createElement("DIV");
+  containingDiv.appendChild(solutionTable);
+
+  for (var i = 0; i < result.length; i++){
+    var row = solutionTable.insertRow(i);
+    for (var j = 0; j < result.length; j++){
+      var item = row.insertCell(j);
+      item.innerHTML = result[i][j];
+    }
+  }
+
+  containingDiv.className = "solutionCenter"
+
+
+  document.body.appendChild(containingDiv);
 
   debugger;
-  document.getElementsByClassName("sudokuInputArea")[0].appendChild(solutionTable);
 
-  console.table(result);
+}
+
+var examplePuzzleSolve = function(){
+
+  var puzzle = [
+            [5,3,0,0,7,0,0,0,0],
+            [6,0,0,1,9,5,0,0,0],
+            [0,9,8,0,0,0,0,6,0],
+            [8,0,0,0,6,0,0,0,3],
+            [4,0,0,8,0,3,0,0,1],
+            [7,0,0,0,2,0,0,0,6],
+            [0,6,0,0,0,0,2,8,0],
+            [0,0,0,4,1,9,0,0,5],
+            [0,0,0,0,8,0,0,7,9]];
+
+  var result = sudoku(puzzle);
+
+  var solutionTable = document.createElement("TABLE");
+  solutionTable.setAttribute("border", "1px black");
+  solutionTable.style.width = "200px";
+  solutionTable.className = "tableItself";
+
+  var containingDiv = document.createElement("DIV");
+  containingDiv.appendChild(solutionTable);
+
+  for (var i = 0; i < result.length; i++){
+    var row = solutionTable.insertRow(i);
+    for (var j = 0; j < result.length; j++){
+      var item = row.insertCell(j);
+      item.innerHTML = result[i][j];
+    }
+  }
+
+  containingDiv.className = "solutionCenter"
+
+
+  document.body.appendChild(containingDiv);
 
   debugger;
 
